@@ -1,0 +1,50 @@
+@media screen and (max-width: 1400px) {
+    .header__menu-point {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+    .header__logo img{
+        width: 80px;
+        margin-right: 20px;
+    }
+    .header__contacts img {
+        width: 25px;
+        height: 25px;
+    }
+    .main__lets-get-started_text h1 {
+        font-size: 40px;
+    }
+    .main__lets-get-started_text {
+        font-size: 20px;
+    }
+    .main__lets-get-started_img img {
+        height: auto;
+        width: 40vw;
+    }
+    .how-we-learn__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .how-we-learn__name-text {
+        font-size: 20px;
+    }
+    .how-we-learn__about-text {
+        font-size: 20px;
+    }
+    .terms__header-title {
+        font-size: 32px;
+    }
+    .terms__header-text {
+        font-size: 20px;
+    }
+    .how-we-learn__point {
+        margin-bottom: 40px;
+    }
+    .how-we-learn__name-img img {
+        width: 40vw;
+    }
+    .how-we-learn__about-img img {
+        width: 40vw;
+    }
+}
