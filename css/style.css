@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: "Circe Rounded";
 }
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
 
 a {
     color: black;
@@ -19,9 +29,6 @@ h1 {
     margin: 0 auto;
 }
 
-section {
-    padding: 60px;
-}
 
 header {
     height: 160px;
