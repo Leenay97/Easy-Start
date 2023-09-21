@@ -83,7 +83,7 @@ header {
     align-items: center;
     height: 90vh;
     line-height: 40px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ header {
 }
 
 .main__lets-get-started img {
-    height: 80vh;
+    height: 70vh;
 }
 
 .how-we-learn h1 {
@@ -145,6 +145,15 @@ header {
     font-size: 25px;
     font-weight: 200;
     line-height: 40px;
+}
+
+.how-we-learn__name-img img {
+    width: 30vw;
+    max-width: 380px;
+}
+
+.how-we-learn__about-img img {
+    width: 30vw;
 }
 
 .how-we-learn__about-container {
@@ -292,11 +301,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .rules__point {
     width: 22%;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,6 +353,7 @@ header {
 .footer__contacts {
     max-width: 320px;
     font-weight: 100;
+    padding-right: 40px;
 }
 
 .footer__contacts a {
@@ -355,10 +366,78 @@ header {
 }
 
 .adress {
-    width: 320px;
     font-weight: 100;
+    max-height: 300px;
+}
+
+.adress__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.adress__point {
+    max-width: 300px;
 }
 
 .adress-contacts {
     display: flex;
+}
+
+.header__burger {
+    position: fixed;
+    top: 60px;
+    right: 80px;
+    height: 55px;
+    z-index: 3;
+    display: none;
+}
+
+.header__burger_mid {
+    height: 10px;
+    width: 60px;
+    top: 22px;
+    background-color: #8901ee;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.header__burger_top {
+    height: 10px;
+    width: 60px;
+    background-color: #8901ee;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.header__burger_bot {
+    height: 10px;
+    width: 60px;
+    background-color: #8901ee;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.burger-active .header__burger_top {
+    transform: translate(0px,   22px) rotate(45deg) ;
+    transition: all 0.3s;
+}
+.burger-active .header__burger_bot {
+    transform: translate(0px,   -22px) rotate(-45deg) ;
+    transition: all 0.3s;
+}
+.burger-active .header__burger_mid {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.menu-active {
+    left: 0;
+}
+
+.noscroll {
+    overflow:hidden;
 }
