@@ -283,6 +283,18 @@
         font-size: 18px;
         padding: 5px 0;
     }
+    .attention {
+        line-height: 30px;
+    }
+    .terms__header-text {
+        line-height: 30px;
+    }
+    .how-we-learn__about-text {
+        line-height: 30px;
+    }
+    .how-we-learn__name-text {
+        line-height: 30px;
+    }
 }
 
 .show {

@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var lastScrollTop;
     window.addEventListener('scroll', function () {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop < 150) return;
         if (scrollTop > lastScrollTop) {
             logo.style.top = '-80px';
             burger.style.top = '-80px';
